@@ -119,6 +119,10 @@
                      transcription.textContent = event.results[i][0].transcript + ' (Confidence: ' + event.results[i][0].confidence + ')';
                   } else {
                      transcription.textContent += event.results[i][0].transcript;
+//agregue desde el telefono
+if (event.results[i][0].confidence > 0.5) {
+
+alert("mayor a 0.5");}
                   }
                }
             };
